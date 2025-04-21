@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ASSESS-.###",
+ "creation": "2025-04-15 13:08:31.089780",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trainee_registration",
+  "assessment_date",
+  "total_marks",
+  "marks_obtained",
+  "result",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainee_registration",
+   "fieldtype": "Link",
+   "label": "Trainee Registration",
+   "options": "Trainee Registration"
+  },
+  {
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date"
+  },
+  {
+   "default": "100",
+   "fieldname": "total_marks",
+   "fieldtype": "Int",
+   "label": "Total Marks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "marks_obtained",
+   "fieldtype": "Int",
+   "label": "Marks Obtained"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "Pass\nFail"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Text",
+   "label": "Comments"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-15 17:03:51.019694",
+ "modified_by": "Administrator",
+ "module": "Training Management",
+ "name": "Assessment",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

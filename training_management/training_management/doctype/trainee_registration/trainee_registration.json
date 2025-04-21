@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-15 13:02:10.315451",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trainee",
+  "training_program",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainee",
+   "fieldtype": "Link",
+   "label": "Trainee",
+   "options": "Trainee"
+  },
+  {
+   "fieldname": "training_program",
+   "fieldtype": "Link",
+   "label": "Training Program",
+   "options": "Training Program"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Registered\nAttended\nAbsent\nCompleted"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-15 13:07:07.617444",
+ "modified_by": "Administrator",
+ "module": "Training Management",
+ "name": "Trainee Registration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

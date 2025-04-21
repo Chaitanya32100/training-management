@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TA-.###",
+ "creation": "2025-04-17 12:59:41.522240",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "in_time",
+  "check_in",
+  "out_time",
+  "check_out",
+  "total_working_hours",
+  "trainee_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Time",
+   "label": "In Time"
+  },
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Link",
+   "label": "Check In",
+   "options": "Trainee Check In"
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Time",
+   "label": "Out Time"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Link",
+   "label": "Check Out",
+   "options": "Trainee Check In"
+  },
+  {
+   "fieldname": "total_working_hours",
+   "fieldtype": "Float",
+   "label": "Total Working Hours"
+  },
+  {
+   "fieldname": "trainee_name",
+   "fieldtype": "Link",
+   "label": "Trainee Name",
+   "options": "Trainee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-17 14:36:05.902024",
+ "modified_by": "Administrator",
+ "module": "Training Management",
+ "name": "Trainee Attendance",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
