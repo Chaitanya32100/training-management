@@ -34,6 +34,13 @@ def mark_all_attendance():
 		# print(get_datetime(check_in_date))
 		# check_in_datetime = get_datetime(x["date"])
         # check_in_date = check_in_datetime.date()
+		if frappe.db.exists("Trainee Attendance", {
+			"trainee_name": trainee_name,
+			"date": check_in_date
+			
+		}):
+			frappe.msgprint(f"Attendance already exists for {trainee_name} on {check_in_date}")
+			continue
 	
 
 
@@ -45,8 +52,13 @@ def mark_all_attendance():
 				"date": check_in_date
 				
 			},
-			fields = ["time","name"]
+			fields = ["time","name"],
+			order_by = "time desc",
+			limit_page_length = 1
+
+			
 		)
+		print(f"Latest checkout for {trainee_name} on {check_in_date}: {exists}")
 		print("Check out",exists)
 		if exists:
 			attendance = frappe.new_doc("Trainee Attendance")
@@ -63,8 +75,30 @@ def mark_all_attendance():
 			print(f"Check Out found for {trainee_name} on {check_in_date}")
 		else:
 			print("No Check Out found")
-		
-		
+
+
+			
+
+# @frappe.whitelist()
+# def get_trainee(docname):
+# 	print("New button testing")
+
+# 	trainees = frappe.get_all("Trainee", fields=["name","full_name"])
+
+	
+# 	trainee_setting = frappe.get_doc("Trainee Setting",docname)
+# 	trainee_setting.trainee_table = []
+
+	
+# 	for x in trainees:
+# 		trainee_setting.append("trainee_table", {
+# 		"full_name": x.full_name
+	 
+# 	})
+
+# 	trainee_setting.save()
+
+# 	return "Trainees Added Successfully"
 		
 
 

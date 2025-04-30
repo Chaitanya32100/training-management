@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "TP-.###",
+ "autoname": "format:{title}-{#####}",
  "creation": "2025-04-15 12:20:23.457318",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,7 +13,9 @@
   "end_date",
   "duration",
   "description",
-  "status"
+  "status",
+  "trainee_table",
+  "grand_total"
  ],
  "fields": [
   {
@@ -58,16 +60,28 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Draft\nScheduled\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "trainee_table",
+   "fieldtype": "Table",
+   "label": "Trainee Table",
+   "options": "Trainee Table"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-15 15:46:47.119770",
+ "modified": "2025-04-29 16:43:30.148061",
  "modified_by": "Administrator",
  "module": "Training Management",
  "name": "Training Program",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

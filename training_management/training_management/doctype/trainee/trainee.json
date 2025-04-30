@@ -10,7 +10,8 @@
   "last_name",
   "dob",
   "gender",
-  "age"
+  "age",
+  "full_name"
  ],
  "fields": [
   {
@@ -37,13 +38,20 @@
   {
    "fieldname": "age",
    "fieldtype": "Int",
-   "label": "Age"
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-15 11:06:13.395616",
+ "modified": "2025-04-23 12:12:32.529224",
  "modified_by": "Administrator",
  "module": "Training Management",
  "name": "Trainee",

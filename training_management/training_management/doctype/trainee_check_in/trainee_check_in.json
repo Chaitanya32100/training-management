@@ -9,7 +9,8 @@
   "log_type",
   "date",
   "trainee",
-  "time"
+  "time",
+  "full_name"
  ],
  "fields": [
   {
@@ -33,12 +34,19 @@
    "fieldname": "time",
    "fieldtype": "Time",
    "label": "Time"
+  },
+  {
+   "fetch_from": "trainee.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-18 16:00:12.811527",
+ "modified": "2025-04-22 17:40:52.062078",
  "modified_by": "Administrator",
  "module": "Training Management",
  "name": "Trainee Check In",

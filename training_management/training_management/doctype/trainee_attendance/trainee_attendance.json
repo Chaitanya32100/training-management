@@ -12,52 +12,70 @@
   "out_time",
   "check_out",
   "total_working_hours",
+  "standard_hours",
+  "over_time",
   "trainee_name"
  ],
  "fields": [
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Date",
+   "read_only": 1
   },
   {
    "fieldname": "in_time",
    "fieldtype": "Time",
-   "label": "In Time"
+   "label": "In Time",
+   "read_only": 1
   },
   {
    "fieldname": "check_in",
    "fieldtype": "Link",
    "label": "Check In",
-   "options": "Trainee Check In"
+   "options": "Trainee Check In",
+   "read_only": 1
   },
   {
    "fieldname": "out_time",
    "fieldtype": "Time",
-   "label": "Out Time"
+   "label": "Out Time",
+   "read_only": 1
   },
   {
    "fieldname": "check_out",
    "fieldtype": "Link",
    "label": "Check Out",
-   "options": "Trainee Check In"
+   "options": "Trainee Check In",
+   "read_only": 1
   },
   {
    "fieldname": "total_working_hours",
    "fieldtype": "Float",
-   "label": "Total Working Hours"
+   "label": "Total Working Hours",
+   "read_only": 1
   },
   {
    "fieldname": "trainee_name",
    "fieldtype": "Link",
    "label": "Trainee Name",
    "options": "Trainee"
+  },
+  {
+   "fieldname": "over_time",
+   "fieldtype": "Float",
+   "label": "Over Time"
+  },
+  {
+   "fieldname": "standard_hours",
+   "fieldtype": "Data",
+   "label": "Standard Hours"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-17 14:36:05.902024",
+ "modified": "2025-04-23 15:27:04.425467",
  "modified_by": "Administrator",
  "module": "Training Management",
  "name": "Trainee Attendance",

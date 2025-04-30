@@ -7,7 +7,9 @@
  "field_order": [
   "sync_date",
   "working_hours",
-  "mark_attendance"
+  "mark_attendance",
+  "trainee_table",
+  "get_trainee"
  ],
  "fields": [
   {
@@ -24,13 +26,24 @@
    "fieldname": "mark_attendance",
    "fieldtype": "Button",
    "label": "Mark Attendance "
+  },
+  {
+   "fieldname": "trainee_table",
+   "fieldtype": "Table",
+   "label": "Trainee Table",
+   "options": "Trainee Table"
+  },
+  {
+   "fieldname": "get_trainee",
+   "fieldtype": "Button",
+   "label": "Get Trainee"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-04-17 12:59:09.577726",
+ "modified": "2025-04-21 14:32:38.925875",
  "modified_by": "Administrator",
  "module": "Training Management",
  "name": "Trainee Setting",
